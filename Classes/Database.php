@@ -3,7 +3,7 @@
 use \PDO;
 
 Class Database {
-  private $dbName = null, $dbHost = null, $dbPass = null, $dbUser = null;
+  private $dbName = null, $dbHost = null, $dbPass = null, $dbUser = null, $dbh = null;
   private static $instance = null;
   private function __construct(array $dbDetails){
     $this->dbName = $dbDetails['db_name'];
