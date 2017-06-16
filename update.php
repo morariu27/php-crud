@@ -12,7 +12,7 @@ $lastname = 'Rogan';
 // Connect to db
 $dbc = Database::connect();
 
-// Update contact_first_name, contact_surname ... are the table rows
+// Update firstname and lastname where email is
 $sth = $dbc->prepare("UPDATE testdb.users
                       SET `firstname` = :firstname,
                           `lastname` = :lastname
