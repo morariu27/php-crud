@@ -17,7 +17,7 @@
 
         var crudRequest = $.ajax({
           type: "POST",
-          url: "server.php",
+          url: "insert.php",
           dataType: "json", // what the server will return
           data: payload
         });
